@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dom elements!</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Text style Changer</h1>
+            <p class="subtitle">modiify the text style with simple input.</p>
+        </header>
+
+        <div class="content">
+            <div class="input-group">
+                 <label for="styleInput">Enter style command :</label>
+            <input type="text" id="styleInput" placeholder="Try 'Bold','italic','Red','big',etc">
+            </div>
+            <button onclick="changeStyle()">Apply style</button>
+           
+        </div>
+        <div class="option">
+            <div class="option-btn" onclick="quickStyle('Bold')">bold</div>
+            <div class="option-btn" onclick="quickStyle('Italic')">italic</div>
+            <div class="option-btn" onclick="quickStyle('Underline')">underline</div>
+        </div>
+        <div class="preview">
+            <div class="preview-title"> preview</div>
+            <div id="p">This simple text will change based on your input.</div>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
